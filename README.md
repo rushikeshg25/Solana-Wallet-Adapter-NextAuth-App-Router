@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Solana Wallet Adapter with NextAuth & Next.js App Router
+
+This repository integrates Solana Wallet Adapter with NextAuth for authentication in a Next.js app using the App Router feature. It provides a streamlined method for users to authenticate with their Solana wallets.
+
+## Features
+
+- **Next.js App Router:** Utilizes Next.js App Router for routing and API handling.
+- **NextAuth:** Seamlessly integrates NextAuth for user authentication.
+- **Solana Wallet Adapter:** Supports multiple Solana wallets, including Phantom and Backpack, for user login.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Before you begin, ensure you have the following:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js
+- A Solana wallet (e.g., Phantom or Backpack)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repository:
 
-## Learn More
+   ```bash
+   git clone https://github.com/rushikeshg25/Solana-Wallet-Adapter-NextAuth-App-Router.git
+   ```
+2. Copy .env.example to .env:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   cp .env.example .env
+   ```
+3. Generate String for AUTH_SECRET:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   openssl rand -base64 33
+   ```   
+4. Run the Next App:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   pnpm run dev
+   ```
+### Star this repo if you will be using this
 
-## Deploy on Vercel
+## Contributing
+   Contributions are welcome! Feel free to open issues or submit pull requests.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
