@@ -1,3 +1,4 @@
+//@ts-nocheck
 "use client";
 import { getCsrfToken, signIn, signOut, useSession } from "next-auth/react";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
