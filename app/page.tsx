@@ -52,10 +52,10 @@ export default function Header() {
   return (
     <div className='flex items-center justify-between w-screen'>
       {!session && (
-        <>
+        <div className='flex items-center justify-center gap-20 w-full'>
           <span>You are not signed in</span>
           <button onClick={handleSignIn}>Sign in</button>
-        </>
+        </div>
       )}
       {session?.user && (
         <div className='flex items-center justify-center gap-20 w-full'>
